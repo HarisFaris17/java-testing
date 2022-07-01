@@ -20,4 +20,13 @@ public class StudentService {
     public List<Student> getAllStudent(){
         return studentRepository.findAll();
     }
+
+    public List<Student> getAllStudent5times(){
+        studentRepository.findAll();
+        studentRepository.findAll();
+        studentRepository.findAll();
+        studentRepository.findAll();
+        return studentRepository.findAll();
+
+    }
 }
